@@ -1,2 +1,8 @@
 main = do 
-    putStrLn("Test")
+    
+
+isPrime :: (Integral a) => a -> Bool
+isPrime n =
+
+factors :: (Integral a) => a -> [Int]
+factors n = 
