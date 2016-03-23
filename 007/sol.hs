@@ -1,6 +1,5 @@
-main = do 
-    let n = 600851475143
-    print $ maximum [x | x <- factors n, isPrime x]
+main = do
+    print $ [x | x <- [2..], isPrime x] !! 10000
 
 isPrime :: Integer -> Bool
 isPrime n = length (factors n) == 2
