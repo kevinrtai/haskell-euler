@@ -7,5 +7,5 @@ main = do
 
 prodThirteen :: String -> [Int] -> [Int]
 prodThirteen "" xs = xs
-prodThirteen str xs = prodThirteen (tail str) ((foldr1 (\acc x -> acc * x) (digits)):xs)
+prodThirteen str xs = prodThirteen (tail str) ((product digits):xs)
         where digits = [digitToInt x | x <- take 13 str]
